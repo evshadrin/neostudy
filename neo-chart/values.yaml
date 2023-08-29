@@ -41,7 +41,7 @@ service:
   type: NodePort
   port: 8080
   targetPort: 8080
-  nodePort: 32080 
+  nodePort: 32080
 
 ingress:
   enabled: false
@@ -86,7 +86,7 @@ affinity: {}
 
 application:
   name: neostudy
-  replicas: 2
+  replicas: 4
   containers:
     name: neostudy
     repo: braveteam/neostudy
